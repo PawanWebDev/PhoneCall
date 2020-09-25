@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+
+:root{
+	--lightgreen: #00FF78 ;
+	--redshade: #FF0051;
+}
+
+.all{
+	height: 100vh;
+	width: 100vw;
+	background-color: #303030;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.call{
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	border: 2px solid #757575 ;
+	animation-name: increasesize;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes increasesize{
+	0%{height: 5rem; width: 5rem;}
+	100%{height: 20rem; width: 20rem;}
+}
+
+.callbtn:hover{
+	background-color: transparent;
+	border: 2px solid #00ff66;
+}
+
+.text{
+	color: white;
+}
+
+.text2{
+	position: absolute;
+	text-align: center;
+	top: 60%;
+}
+
+.callaction{
+	width: 16rem;
+	display: block;
+	background-color: transparent;
+	border: 1px solid white;
+	margin-top: 0.5rem;
+	color: white;
+	cursor: pointer;
+	height: 2.5rem;
+	outline: none;
+}
+
+@media(max-width: 332px){
+	.callaction{width: 100%}
+}
+
+.rc{
+	border-color: var(--lightgreen);
+	color: var(--lightgreen);
+	margin-top: 1rem;
+}
+
+.rc:hover{
+	background-color: var(--lightgreen);
+	color: black;
+}
+
+.ec{
+	border-color: var(--redshade);
+	color: var(--redshade);
+}
+
+.ec:hover{
+	background-color: var(--redshade);
+	color: black;
+}
